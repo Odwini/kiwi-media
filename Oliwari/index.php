@@ -21,5 +21,5 @@ class index {
         //so if i write here some code it will appeare in my git repo ? 
         }
     //put your code here    
-}
+} 
 // testing git is awesome 
