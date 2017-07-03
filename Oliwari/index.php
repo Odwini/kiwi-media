@@ -15,7 +15,6 @@ class index {
     
     
     public function __construct() {
-        print_r($_GET);
-    }
+        print_r($_GET);    }
     //put your code here
 }
