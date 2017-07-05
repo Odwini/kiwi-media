@@ -8,4 +8,115 @@ and open the template in the editor.
     Author     : odwini
 */
 
-  
+
+body{ 
+    font-size: 18px;
+    font-family: comfortaaregular;
+} 
+.container{
+    width:100%;
+    height: auto;
+    margin: auto;
+    &.smaller{
+        max-width: 1208px;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    &.larger{
+        max-width: 1395px;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+}
+
+header{
+    .top_row.container.larger{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        z-index: 2;
+        padding-top: 50px;
+
+        .logo{
+            width: 20%;
+            max-width: 190px;
+            #olive{
+                transform-origin: center;
+                transition: 0.8s all ease-in-out;   
+            }
+            svg{
+                width:100%;
+                height:auto;
+            }
+            &:hover{
+                svg{
+                    #olive{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        .menu{
+            display: block;
+            width:auto;
+            position: relative;
+            ul{
+                font-size: 1.2rem;
+                font-family: comfortaalight;
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                li{
+                    color: #fff; 
+                    margin-right:20px;
+                    display:flex;
+                    flex-direction:column;
+                    jusify-content:center;
+                    align-items:center;
+                    a{
+                        font-size: 1.2rem;
+                        font-family: comfortaalight;
+                        color: #fff;
+                        transition: 0.5s all;
+                        position: relative;
+                        padding-bottom: 6px;
+                        cursor:pointer; 
+                        &:after{
+                            transition: 0.5s all;
+                            content: "";
+                            height:1px;
+                            width:100%;
+                            bottom:0;
+                            margin: auto;
+                            position: absolute;
+                            display:block;
+                            background-color: #fff;
+                        }
+                        &:before{
+                            transition: 0.5s all;
+                            content: "";
+                            height:1px;
+                            width:0%;
+                            bottom:0;
+                            margin: auto;
+                            position: absolute;
+                            z-index: 2;
+                            display:block;
+                            background-color: #C4D64B;
+                        }
+                        &:hover{
+                            color: #C4D64B;
+                            &:before{
+
+                                width:100%;
+                            } 
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

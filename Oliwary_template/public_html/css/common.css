@@ -7,5 +7,91 @@ and open the template in the editor.
     Created on : Jul 4, 2017, 9:37:09 AM
     Author     : odwini
 */
+body {
+  font-size: 18px;
+  font-family: comfortaaregular; }
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto; }
+  .container.smaller {
+    max-width: 1208px;
+    padding: 0 25px;
+    box-sizing: border-box; }
+  .container.larger {
+    max-width: 1395px;
+    padding: 0 25px;
+    box-sizing: border-box; }
+
+header .top_row.container.larger {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  padding-top: 50px; }
+  header .top_row.container.larger .logo {
+    width: 20%;
+    max-width: 190px; }
+    header .top_row.container.larger .logo #olive {
+      transform-origin: center;
+      transition: 0.8s all ease-in-out; }
+    header .top_row.container.larger .logo svg {
+      width: 100%;
+      height: auto; }
+    header .top_row.container.larger .logo:hover svg #olive {
+      transform: rotate(360deg); }
+  header .top_row.container.larger .menu {
+    display: block;
+    width: auto;
+    position: relative; }
+    header .top_row.container.larger .menu ul {
+      font-size: 1.2rem;
+      font-family: comfortaalight;
+      display: flex;
+      list-style: none;
+      justify-content: space-around; }
+      header .top_row.container.larger .menu ul li {
+        color: #fff;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        jusify-content: center;
+        align-items: center; }
+        header .top_row.container.larger .menu ul li a {
+          font-size: 1.2rem;
+          font-family: comfortaalight;
+          color: #fff;
+          transition: 0.5s all;
+          position: relative;
+          padding-bottom: 6px;
+          cursor: pointer; }
+          header .top_row.container.larger .menu ul li a:after {
+            transition: 0.5s all;
+            content: "";
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            display: block;
+            background-color: #fff; }
+          header .top_row.container.larger .menu ul li a:before {
+            transition: 0.5s all;
+            content: "";
+            height: 1px;
+            width: 0%;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            z-index: 2;
+            display: block;
+            background-color: #C4D64B; }
+          header .top_row.container.larger .menu ul li a:hover {
+            color: #C4D64B; }
+            header .top_row.container.larger .menu ul li a:hover:before {
+              width: 100%; }
 
 /*# sourceMappingURL=common.css.map */
