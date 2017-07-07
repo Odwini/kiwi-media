@@ -431,6 +431,7 @@ header.oliwary_main {
       width: 100%;
       height: auto;
       display: flex;
+      margin-bottom: 100px;
       justify-content: space-around;
       align-items: flex-start; }
       .reserwation_section .content .actions_blocks .block {
@@ -440,10 +441,14 @@ header.oliwary_main {
         justify-content: center;
         align-items: center; }
         .reserwation_section .content .actions_blocks .block .thumb_ico {
-          width: 105px;
+          width: 90px;
           margin-bottom: 25px; }
         .reserwation_section .content .actions_blocks .block .title {
           color: #f6f2b3;
+          font-family: comfortaabold;
+          width: 100%;
+          text-transform: uppercase;
+          text-align: left;
           font-size: 1.2rem;
           margin-bottom: 46px; }
           .reserwation_section .content .actions_blocks .block .title .number {
@@ -451,23 +456,247 @@ header.oliwary_main {
             color: #fff;
             font-family: comfortaabold; }
         .reserwation_section .content .actions_blocks .block .actions {
-          width: 100%; }
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
           .reserwation_section .content .actions_blocks .block .actions .restaurant_tables {
-            width: 100%; }
+            width: 100%;
+            margin-bottom: 15px; }
             .reserwation_section .content .actions_blocks .block .actions .restaurant_tables .tables_container {
-              width: 100%;
+              width: 235px;
+              margin: auto;
               display: flex;
               justify-content: flex-start;
               align-items: center;
               flex-wrap: wrap; }
               .reserwation_section .content .actions_blocks .block .actions .restaurant_tables .tables_container .table {
-                width: calc(12% - 2px);
-                margin-right: 10%;
+                width: 33px;
+                margin-right: 15px;
                 height: 33px;
+                position: relative;
                 border: 1px solid #fff;
+                cursor: pointer;
                 border-radius: 4px;
-                margin-bottom: 5px; }
+                margin-bottom: 15px; }
                 .reserwation_section .content .actions_blocks .block .actions .restaurant_tables .tables_container .table:nth-child(5n) {
                   margin-right: 0; }
+                .reserwation_section .content .actions_blocks .block .actions .restaurant_tables .tables_container .table.active:before {
+                  position: absolute;
+                  top: 0;
+                  content: "";
+                  display: block;
+                  background-color: #adfd00;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  width: 13px;
+                  height: 13px;
+                  border-radius: 50px; }
+          .reserwation_section .content .actions_blocks .block .actions .button {
+            padding: 17px 32px;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            margin-bottom: 39px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 3px dotted #f6f2b3;
+            /*                        .round_border{
+                                        span:before,
+                                            span:after{
+                                            content: "";
+                                            display:block;
+                                            position: absolute;
+                                            margin: auto;
+                                            background-image: url(../img/dotted_border.png);
+                                            background-size: contain;
+                                            background-position: center center;
+                                        }
+                                        span:first-child{
+                                            &:before{
+                                                width: 5px;
+                                                height: 100%;
+                                                bottom:0;
+                                                left:-1px;
+                                                background-position: center center;
+                                            }
+                                            &:after{
+                                                height: 5px;
+                                                width: 100%;
+                                                top:-1px;
+                                                left:0;
+                                                background-repeat: repeat-x;
+                                                right:0;
+                                                margin: auto;
+                                                background-position: center center;
+                                            }
+                                        }
+                                        span:last-child{
+                                            &:before{
+            
+                                            }
+                                            &:after{
+            
+                                            }
+                                        }
+                                    }*/ }
+            .reserwation_section .content .actions_blocks .block .actions .button .text {
+              color: #f6f2b3;
+              text-transform: uppercase; }
+            .reserwation_section .content .actions_blocks .block .actions .button:hover {
+              border-color: #adfd00; }
+              .reserwation_section .content .actions_blocks .block .actions .button:hover .text {
+                color: #adfd00; }
+          .reserwation_section .content .actions_blocks .block .actions .clock {
+            width: 238px; }
+            .reserwation_section .content .actions_blocks .block .actions .clock .arrow {
+              width: 10%; }
+            .reserwation_section .content .actions_blocks .block .actions .clock .top {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 24px; }
+              .reserwation_section .content .actions_blocks .block .actions .clock .top .content {
+                width: 80%;
+                display: block; }
+                .reserwation_section .content .actions_blocks .block .actions .clock .top .content .item {
+                  width: 30%;
+                  color: #404245;
+                  font-size: 1.2rem;
+                  text-align: center;
+                  line-height: 1.5rem;
+                  text-transform: uppercase;
+                  font-family: comfortaabold;
+                  float: left; }
+                  .reserwation_section .content .actions_blocks .block .actions .clock .top .content .item.current {
+                    width: 40%;
+                    color: #fff;
+                    font-size: 1.4rem; }
+            .reserwation_section .content .actions_blocks .block .actions .clock .bottom {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 50px; }
+              .reserwation_section .content .actions_blocks .block .actions .clock .bottom .content {
+                width: 80%;
+                display: block; }
+                .reserwation_section .content .actions_blocks .block .actions .clock .bottom .content .item {
+                  width: 30%;
+                  font-size: 1.2rem;
+                  color: #404245;
+                  font-family: comfortaabold;
+                  float: left;
+                  line-height: 1.5rem;
+                  text-align: center; }
+                  .reserwation_section .content .actions_blocks .block .actions .clock .bottom .content .item.current {
+                    width: 40%;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 1.4rem; }
+    .reserwation_section .content .confirm_container .confirm_button {
+      text-align: center;
+      display: inline-block;
+      margin: auto;
+      border-radius: 5px;
+      border: 3px dotted #404245;
+      color: #404245;
+      position: relative;
+      padding: 17px 32px; }
+
+.grape_about_us .content {
+  position: relative;
+  height: 800px;
+  padding: 90px; }
+  .grape_about_us .content .grape_photo {
+    width: auto;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    height: 80%;
+    bottom: 0;
+    margin: auto; }
+    .grape_about_us .content .grape_photo img {
+      height: 100%;
+      width: auto; }
+  .grape_about_us .content .squares {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grape_about_us .content .squares .content_squares {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%; }
+      .grape_about_us .content .squares .content_squares .central_square {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        left: 97px;
+        top: 77px;
+        background-color: #181d27;
+        box-shadow: -7px 10px 32px -5px #181d27; }
+      .grape_about_us .content .squares .content_squares .content_sqare {
+        position: relative;
+        width: 50%;
+        z-index: 2;
+        height: auto;
+        margin: 30px 0;
+        margin-right: auto;
+        padding: 31px 70px;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: -7px 10px 32px -5px #181d27; }
+        .grape_about_us .content .squares .content_squares .content_sqare .logo_small {
+          padding: 43px 80px;
+          border-top: 2px solid #f6f2b3;
+          box-sizing: border-box; }
+        .grape_about_us .content .squares .content_squares .content_sqare h2 {
+          font-size: 1.8rem;
+          color: #000;
+          text-align: center;
+          display: inline-block;
+          position: relative;
+          font-family: comfortaabold;
+          padding: 25px 0;
+          letter-spacing: 1px;
+          border-top: 2px solid #f6f2b3;
+          border-bottom: 2px solid #f6f2b3;
+          margin: auto;
+          left: 50%;
+          transform: translateX(-50%); }
+        .grape_about_us .content .squares .content_squares .content_sqare .content_text {
+          padding: 28px 21px;
+          color: #938e8e;
+          font-size: 1rem;
+          text-align: center; }
+        .grape_about_us .content .squares .content_squares .content_sqare .arrow_go {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 24px;
+          height: 3px;
+          margin: auto; }
+      .grape_about_us .content .squares .content_squares .image_sqare {
+        width: 51%;
+        z-index: 2;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        box-shadow: -7px 10px 32px -5px #181d27;
+        background-image: url(../img/cover_aboutus.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; }
 
 /*# sourceMappingURL=template.css.map */
